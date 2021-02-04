@@ -73,7 +73,7 @@ public final class numeromayor_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </head>\n");
       out.write("    <body>\n");
       out.write("        <div class=\"Container\"> \n");
-      out.write("            <form method=\"#\" action=\"\">\n");
+      out.write("            <form method=\"post\" action=\"NumeroMayor\">\n");
       out.write("                <div class=\"form-group\">\n");
       out.write("                    <div class=\"form-row\">\n");
       out.write("                        <h1>CALCULAR CUAL NUMERO ES MAYOR</h1>\n");
@@ -83,6 +83,19 @@ public final class numeromayor_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            <label name=\"lbln1\">Numero 1</label>\n");
       out.write("                            <input type=\"text\" class=\"form-control\" placeholder=\"Ingrese numero 1\" name=\"txtn1\"/>\n");
       out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"form-group\"> \n");
+      out.write("                        <div class=\"form-row\">\n");
+      out.write("                            <label name=\"lbn2\">Numero 2</label>\n");
+      out.write("                            <input type=\"text\" class=\"form-control\" placeholder=\"Ingrese numero 2\" name=\"txtn2\"/>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"form-group\"> \n");
+      out.write("                        <div class=\"form-row\">\n");
+      out.write("                            <label name=\"lbln3\">Numero 3</label>\n");
+      out.write("                            <input type=\"text\" class=\"form-control\" placeholder=\"Ingrese numero 3\" name=\"txtn3\"/>\n");
+      out.write("                        </div>\n");
+      out.write("                        <input type=\"submit\" name=\"Calcular\" value=\"Calcular\"/>\n");
       out.write("                    </div>\n");
       out.write("                \n");
       out.write("                </div>\n");

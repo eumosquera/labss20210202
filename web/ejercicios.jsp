@@ -36,7 +36,7 @@
             <div class="card card-login mx-auto mt-5">
                 <div class="form-row"><h1>CALCULAR SI UN NUEMRO ES PRIMO</h1> </div>
                 <div class="card-body">
-                    <form method="pos" action="numeroprimo">
+                    <form method="post" action="numeroprimo">
                         <div class="form-group">
                             <div class="form-row">
 
@@ -51,9 +51,10 @@
 
                                 </div>
                             </div>
+                            <input type="submit" name="btnCalcular"  value="Calcular"/>
                         </div>
                     </form>
-                    <input type="submit" name="btnCalcular" class="btn btn-primary btn-block" value="Calcular"/>
+                    
                 </div>
             </div>
         </div>

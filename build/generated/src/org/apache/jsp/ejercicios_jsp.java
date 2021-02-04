@@ -73,7 +73,7 @@ public final class ejercicios_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <body>\n");
       out.write("        <div class=\"container\">\n");
       out.write("            <div class=\"card card-login mx-auto mt-5\">\n");
-      out.write("                <div class=\"card-header\"><h1>CALCULAR SI UN NUEMRO ES PRIMO</h1> </div>\n");
+      out.write("                <div class=\"form-row\"><h1>CALCULAR SI UN NUEMRO ES PRIMO</h1> </div>\n");
       out.write("                <div class=\"card-body\">\n");
       out.write("                    <form method=\"pos\" action=\"numeroprimo\">\n");
       out.write("                        <div class=\"form-group\">\n");
