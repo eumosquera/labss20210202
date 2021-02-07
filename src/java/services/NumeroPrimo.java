@@ -10,6 +10,7 @@ package services;
  * @author ing.soporte
  */
 public class NumeroPrimo {
+    boolean primo = false;
 
     int numero;
 
@@ -19,7 +20,9 @@ public class NumeroPrimo {
     }
 
     public int getNumeroPrimo() {
+        String si;
         int cont;
+        boolean primo=false;
         cont = 0;
         for (int i = 1; i <= numero; i++) {
 
@@ -30,10 +33,16 @@ public class NumeroPrimo {
 
         }
         if (cont <= 2) {
-            return numero;//voy AQUI
+            primo = true;
+            si = "Es primo";
+                       
         } else {
-            return numero;//voy
+            primo = false;
+            si = "No es primo";
+           
+            
         }
         
+        return Integer.parseInt(si);
     }
 }

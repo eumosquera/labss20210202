@@ -9,59 +9,49 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>NUMERO MAYOR</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- Bootstrap core CSS-->
-        <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-        <!-- Custom fonts for this template-->
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <!-- Custom styles for this template-->
-        <link href="css/sb-admin.css" rel="stylesheet">
-
-        <!-- Bootstrap core JavaScript-->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- Core plugin JavaScript-->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-        <link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
-        <script src="js/sweetalert.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="Container"> 
-            <form method="post" action="NumeroMayor">
-                <div class="form-group">
+        <div class="container">
+            <div>
+                <form method="post" action="NumeroMayor">
+                    <h1>CALCULAR CUAL NUMERO ES MAYOR</h1>
+                    <hr>
                     <div class="form-row">
-                        <h1>CALCULAR CUAL NUMERO ES MAYOR</h1>
-                    </div>
-                    <div class="form-group"> 
-                        <div class="form-row">
-                            <label name="lbln1">Numero 1</label>
-                            <input type="text" class="form-control" placeholder="Ingrese numero 1" name="txtn1"/>
+                        <div class="col-md-4">
+                            <label>Ingresa el numero 1</label>
+                            <input class="form-control" type="number" placeholder="Ingresa el numero 1" id="txtnumero" name="txtn1" />
                         </div>
                     </div>
-                    <div class="form-group"> 
-                        <div class="form-row">
-                            <label name="lbn2">Numero 2</label>
-                            <input type="text" class="form-control" placeholder="Ingrese numero 2" name="txtn2"/>
+                    <hr>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <label>Ingresa el numero 2</label>
+                            <input class="form-control" type="number" placeholder="Ingresa el numero 2" id="txtnumero" name="txtn2" />
                         </div>
                     </div>
-                    <div class="form-group"> 
-                        <div class="form-row">
-                            <label name="lbln3">Numero 3</label>
-                            <input type="text" class="form-control" placeholder="Ingrese numero 3" name="txtn3"/>
+                    <hr>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <label>Ingresa el numero 3</label>
+                            <input class="form-control" type="number" placeholder="Ingresa el numero 3" id="txtnumero" name="txtn3" />
                         </div>
-                        <input type="submit" name="Calcular" value="Calcular"/>
                     </div>
-                
-                </div>
-                
-            </form>
-        </div>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <br>
+                            <input class="btn-outline-primary btn-sn btn-block" type="submit" value="Calcular" id="btnCalcular" name="btnCalcular" />
+                        </div>
+                    </div>
+                </form>
+                <%
+
+                %>
+
+            </div>
     </body>
 </html>

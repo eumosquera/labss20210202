@@ -35,22 +35,20 @@ public class numeroprimo extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            int numero=0;
-            try{
-                numero=Integer.parseInt(request.getParameter("txtnumero"));
-                
-                NumeroPrimo nume = new NumeroPrimo(numero);
-                out.print("El numero: " + nume.getNumeroPrimo() + " Es primo");
-            } catch (Exception ex){
-                out.print(ex.getMessage());
+            int numero = 0;
+            try {
+                numero = Integer.parseInt(request.getParameter("txtnumero"));
+
+                NumeroPrimo primo = new NumeroPrimo(numero);
+                out.println("<h1>" + "El numero: " + primo.getNumeroPrimo() + "</h1>");
+            } catch (Exception ex) {
+                out.println(ex.getMessage());
             }
-            
-            
-            
+
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet numeroprimo</title>");            
+            out.println("<title>NUMERO PRIMO</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>" + "El numero ingresado fue: " + numero + "</h1>");

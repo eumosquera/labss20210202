@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import services.Operaciones;
 
 /**
  *
@@ -34,21 +35,29 @@ public class Operacion extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            int suma, resta, multp;
+            int n1 = 0, n2 = 0;
             float divi;
             try {
-                
-            } catch (Exception ex){
+                n1 = Integer.parseInt(request.getParameter("txtn1"));
+                n2 = Integer.parseInt(request.getParameter("txtn2"));
+                Operaciones sum = new Operaciones(n1, n2);
+                out.println("La suma es: " + sum.getOperacioness() + "<br>");
+                out.println("");
+                out.println("La resta es: " + sum.getOperacionesr() + "<br>");
+                out.println("");
+                out.println("La multiplicacion es: " + sum.getOperacionesm() + "<br>");
+                out.println(sum.getOperacionesd());
+            } catch (Exception ex) {
                 out.print(ex.getMessage());
             }
-            
+
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Operacion</title>");            
+            out.println("<title>Operaciones</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Operacion at " + request.getContextPath() + "</h1>");
+            out.println("<h1>" + "Los numeros son: " + n1 + " y " + n2 + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
